@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Negocio de Notario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="src/style/css notari.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("k6r0FpQq5q6vFHVJY");
+        })();
+    </script>
+
+    
+</head>
+<body>
+    <header id="inicio">
+        <div id="carouselInicio" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="src/img/FullLogo.png" class="d-block w-100" alt="Notaría 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="src/img/FullLogo1.png" class="d-block w-100" alt="Notaría 2">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselInicio" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselInicio" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Siguiente</span>
+            </a>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobreMi">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sobre Mí -->
+    <section id="sobreMi" class="mt-5 text-center">
+        <h2>Sobre Nosotros</h2>
+        <div class="row justify-content-center g-4">
+            <div class="col-md-3 info-section">
+                <h4>Biografía</h4>
+                <p class="fade-in">En American Forms, nos dedicamos a proporcionar servicios profesionales de preparación de formularios migratorios, ayudando a individuos y familias a navegar los procesos administrativos con confianza y precisión. Aunque no somos abogados y no ofrecemos asesoramiento legal, estamos comprometidos a apoyar a nuestros clientes con herramientas claras y orientación experta para cumplir con los requisitos de las autoridades migratorias. Nuestro objetivo es simplificar trámites y ofrecer un servicio honesto y accesible a quienes buscan construir un futuro en los Estados Unidos.</p>
+            </div>
+            <div class="col-md-3 info-section mx-4">
+                <h4>Misión</h4>
+                <p class="fade-in">American Forms nació con el propósito de facilitar el acceso a servicios de preparación de documentos para la comunidad de los Estados Unidos de América. Reconociendo la creciente necesidad de apoyo en trámites legales, administrativos y personales, esta empresa se fundó con la misión de ofrecer soluciones rápidas, confiables y económicas. Desde su inicio, American Forms se ha especializado en la preparación de documentos como contratos, formularios legales, solicitudes oficiales y más, enfocándose siempre en la atención personalizada y en las necesidades de cada cliente. A través de su dedicación, American Forms se ha ganado una reputación como un aliado confiable en la preparación de documentación, ayudando a simplificar procesos complejos para individuos y empresas en la región.</p>
+            </div>
+            <div class="col-md-3 info-section">
+                <h4>Visión</h4>
+                <p class="fade-in">En American Forms, nuestra visión es convertirnos en el aliado líder en la preparación de documentos en Dallas-Fort Worth, brindando a nuestra comunidad soluciones accesibles, precisas y personalizadas. Nos esforzamos por simplificar los procesos más complejos, ofreciendo un servicio confiable que empodere a individuos y empresas para alcanzar sus metas de manera eficiente. Aspiramos a ser reconocidos como un ejemplo de excelencia, compromiso y apoyo en cada interacción.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- Servicios -->
+        <section id="servicios" class="mt-5">
+            <h2 class="text-center">Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-briefcase fa-3x"></i>
+                        <h4>Permiso de trabajo</h4>
+                        <p>Precio: 15.00$</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-file-signature fa-3x"></i>
+                        <h4>Cierre administrativo</h4>
+                        <p>Precio: 20.00$</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Ajuste Cubano</h4>
+                        <p>Precio: 10.00$</p>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonios -->
+        <section id="testimonios" class="mt-5">
+            <h2>Testimonios</h2>
+            <div id="carouselTestimonios" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="testimony-card">
+                            <img src="src/img/testimonio 1.jpg" class="d-block w-100" alt="Testimonio 1">
+                            <div class="testimony-content fade-in">
+                                <h4>Persona 1</h4>
+                                <p>Muchas gracias, estoy encantada con el servicio al cliente con la buena energía, me han ayudado muchísimo en este proceso, lo recomiendo 100% y lo estaré recomendando para toda mi gente.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony-card">
+                            <img src="src/img/testimonio 2.jpg" class="d-block w-100" alt="Testimonio 2">
+                            <div class="testimony-content fade-in">
+                                <h4>Persona 2</h4>
+                                <p>Muchas gracias al equipo de American Forms, por toda la ayuda que me han brindado, por despejar las dudas en mis procesos de migracion, y siempre estar al tanto de los mismos, 100% recomendados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony-card">
+                            <img src="src/img/testimonio 3.jpg" class="d-block w-100" alt="Testimonio 3">
+                            <div class="testimony-content fade-in">
+                                <h4>Persona 3</h4>
+                                <p>Buenas días, gracias al equipo de American Forms, por ayudarme con las dudas en mis procesos de migracion, y siempre estar preocupado  100% recomendado muchas gracias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony-card">
+                            <img src="src/img/testimonio 4.jpg" class="d-block w-100" alt="Testimonio 4">
+                            <div class="testimony-content fade-in">
+                                <h4>Persona 4</h4>
+                                <p>Estoy muy satisfecho con el servicio recibido por parte de American Forms. Fueron amables y pacientes, respondiendo a todas mis preguntas sin prisa. Su enfoque en el cliente me hizo sentir valorado y seguro durante todo el proceso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="testimony-card">
+                            <img src="src/img/testimonio 5.jpg" class="d-block w-100" alt="Testimonio 5">
+                            <div class="testimony-content fade-in">
+                                <h4>Persona 5</h4>
+                                <p>Muchas gracias por su ayuda. Su servicio fue extremadamente eficiente y profesional. Se me explicó claramente cada paso del proceso y se aseguraron de que entendiera todos los documentos antes de firmar. Su atención al detalle y rapidez hicieron que la experiencia fuera muy agradable.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselTestimonios" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselTestimonios" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contacto -->
+        <section id="contacto" class="mt-5">
+            <h2>Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="carouselAtenciones" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="testimony-card">
+                                    <img src="src/img/contact us 1.jpg" class="d-block w-100" alt="Atención 1">
+                                    <div class="testimony-content fade-in"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimony-card">
+                                    <img src="src/img/contact us 2.jpg" class="d-block w-100" alt="Atención 2">
+                                    <div class="testimony-content fade-in"></div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="testimony-card">
+                                    <img src="src/img/contact us 3.jpg" class="d-block w-100" alt="Atención 3">
+                                    <div class="testimony-content fade-in"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselAtenciones" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselAtenciones" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <h5>Síguenos en nuestras redes sociales:</h5>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/american_forms?igsh=MXY5NmQyczlrM250bw==" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/share/1HArBTiDe2/" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/16823920876" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://www.tiktok.com/@american_forms?_t=ZT-8utmm9ncpZe&_r=1" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                    <div class="contact-text">
+                        <h5>Contáctanos para obtener más información sobre nuestros servicios notariales. Estaremos encantados de asistirte.</h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Formulario flotante -->
+    <div id="formModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeForm()">&times;</span>
+            <h4 id="serviceName"></h4>
+            <p id="serviceDescription"></p>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="date">Fecha de Cita:</label>
+                    <input type="text" id="date" class="form-control" placeholder="Selecciona una fecha" required>
+                </div>
+                <div class="text-center">
+                    <button id="btn-enviar" type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="src/scripts/animacion.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script>
+    // Inicializar Flatpickr
+    flatpickr("#date", {
+        dateFormat: "Y-m-d", // Formato de la fecha
+        minDate: "today", // No permitir seleccionar fechas pasadas
+    });
+    </script>
+
+<script>
+    function openForm(serviceName, serviceDescription) {
+        document.getElementById('serviceName').innerText = serviceName;
+        document.getElementById('formModal').style.display = "block";
+    }
+
+    function closeForm() {
+        document.getElementById('formModal').style.display = "none";
+    }
+
+    // Manejar el envío del formulario
+    document.getElementById('contactForm').onsubmit = function(event) {
+        event.preventDefault(); // Prevenir el envío real
+        
+        // Obtener los valores del formulario
+        const name = document.getElementById('name').value;
+        const phone = document.getElementById('phone').value;
+        const date = document.getElementById('date').value;
+        const email = document.getElementById('email').value;
+        const serviceName = document.getElementById('serviceName').innerText;
+
+        // Enviar el correo usando EmailJS
+        emailjs.send("service_b8vu7jh", "template_7nnqaxh", {
+            from_name: name,
+            from_phone: phone,
+            appointment_date: date,
+            from_email: email,
+            service_name: serviceName,
+        })
+        .then(function(response) {
+            console.log('SUCCESS!', response.status, response.text);
+            alert("Formulario enviado exitosamente!");
+            closeForm(); // Cerrar formulario después de enviar
+        }, function(error) {
+            console.log('FAILED...', error);
+            alert("Error al enviar el formulario. Intenta nuevamente.");
+        });
+    };
+
+    // Asignar la función openForm a los botones de "forms"
+    document.querySelectorAll('.btn-forms').forEach(button => {
+        button.onclick = function() {
+            const serviceName = this.closest('.service-card').querySelector('h4').innerText;
+            const serviceDescription = this.closest('.service-card').querySelector('p').innerText;
+            openForm(serviceName, serviceDescription);
+        };
+    });
+
+    // Inicializar Flatpickr
+    flatpickr("#date", {
+        dateFormat: "Y-m-d", // Formato de la fecha
+        minDate: "today", // No permitir seleccionar fechas pasadas
+    });
+</script>
+    
+</body>
+</html>
