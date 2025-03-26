@@ -279,14 +279,14 @@ h5 {
 }
 
 #toggleServices {
-        background-color: #000537; /* Azul oscuro */
-        color: white; /* Texto blanco */
-        position: relative;
-        justify-content: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: absolute;
+    background-color: #000537; /* Azul oscuro */
+    color: white; /* Texto blanco */
+    display: inline-block; /* Cambia a inline-block para centrar correctamente */
+    margin: 20px auto; /* Margen automático para centrar */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el ratón */
 }
 
 #toggleServices.active i {
