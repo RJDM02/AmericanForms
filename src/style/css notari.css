@@ -44,6 +44,19 @@ h2 {
     width: 100%; /* Asegura que ocupen todo el ancho */
 }
 
+.hero-subtitle {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #000537;
+    margin: 1rem 0;
+}
+
+.hero-subtitle h2 {
+    color: #1D3557;
+    font-size: 1.2rem;
+    margin: 0;
+}
+
 /* Estilos para el carrusel */
 #carouselInicio .carousel-item img {
     height: 700px; /* Altura del primer carrusel */
@@ -83,6 +96,7 @@ h2 {
     padding: 20px; /* Espaciado interno */
     text-align: center; /* Centra el texto */
     background-color: #FFFFFF; /* Fondo blanco */
+    
 }
 
 /* Estilos para los botones */
@@ -186,7 +200,6 @@ h5 {
 }
 
 .modal {
-    display: none; /* Oculto por defecto */
     position: fixed; /* Fijo en la pantalla */
     z-index: 1; /* Por encima de otros elementos */
     left: 0;
@@ -224,4 +237,59 @@ h5 {
 #btn-enviar {
     background-color: #000537; /* Azul oscuro */
     color: white; /* Texto blanco */
+}
+
+.service-description {
+    margin: 10px 0;
+}
+
+.card-description {
+    color: #666;
+    font-size: 0.9em;
+    min-height: 60px;
+}
+
+.modal-description {
+    display: none;
+}
+
+#idDescription {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-card {
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.service-card.hidden {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#toggleServices {
+        background-color: #000537; /* Azul oscuro */
+        color: white; /* Texto blanco */
+        position: relative;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+}
+
+#toggleServices.active i {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
 }

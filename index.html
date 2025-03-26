@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Forms</title>
+    <link rel="icon" href="../AmericanForms-almacen/src/img/Logito.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -49,6 +50,11 @@
             </div>
         </nav>
     </header>
+    
+<!-- Subtítulo -->
+<div class="hero-subtitle">
+    <h2>No somos abogados en los Estados Unidos, pero estamos preparados para asistirte con las formas migratorias necesarias para tu legalidad en el país</h2>
+</div>
 
     <!-- Sobre Mí -->
     <section id="sobreMi" class="mt-5 text-center">
@@ -74,12 +80,17 @@
         <section id="servicios" class="mt-5">
             <h2 class="text-center">Servicios</h2>
             <div class="row">
+                <!-- Servicios visibles por defecto -->
+                <div class="services-container">
+                    <!-- Tus 3 primeros servicios aquí -->
                 <div class="col-md-4">
                     <div class="service-card text-center">
                         <i class="fas fa-briefcase fa-3x"></i>
-                        <h4>Permiso de trabajo</h4>
-                        <p>Precio: 15.00$</p>
-                        <div class="d-flex justify-content-center">
+                            <h4>Autorización de empleo</h4>
+                            <div class="serviceDescription">
+                                <p class="modal-description hidden">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.</p>
+                            </div>
+                                <div class="d-flex justify-content-center">
                             <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
@@ -95,8 +106,10 @@
                 <div class="col-md-4">
                     <div class="service-card text-center">
                         <i class="fas fa-file-signature fa-3x"></i>
-                        <h4>Cierre administrativo</h4>
-                        <p>Precio: 20.00$</p>
+                        <h4>Solicitud de residencia permanente bajo la ley de ajuste cubano</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">La Ley de Ajuste Cubano es una legislación que permite a los ciudadanos cubanos que han llegado a Estados Unidos quedarse en el país y obtener su residencia permanente legal, siempre que cumplan ciertos requisitos. Por ejemplo, deben haber vivido en Estados Unidos durante al menos un año antes de presentar su solicitud. Esta ley se creó para ayudar a los cubanos que escapaban de dificultades en su país.</p>
+                        </div>
                         <div class="d-flex justify-content-center">
                             <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
                                 <i class="fab fa-whatsapp"></i>
@@ -113,8 +126,130 @@
                 <div class="col-md-4">
                     <div class="service-card text-center">
                         <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Ajuste Cubano</h4>
-                        <p>Precio: 10.00$</p>
+                        <h4>Cambio de dirección</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">Actualizar tu dirección en Estados Unidos es esencial para mantener tu información al día con las autoridades, instituciones bancarias, y otros servicios. Esto garantiza que recibas correspondencia importante, como notificaciones legales, beneficios gubernamentales o documentos relacionados con inmigración. Además, es clave para cumplir con ciertos requisitos legales, como los de tu registro migratorio o las actualizaciones de tu licencia de conducir. ¡Mantener todo al día evita problemas y te da tranquilidad!</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Asilo</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">El asilo en Estados Unidos es una protección legal para personas que enfrentan persecución en su país de origen debido a su raza, religión, nacionalidad, opiniones políticas o pertenencia a un grupo social particular. Al solicitar asilo, los individuos pueden construir un futuro seguro y estable, lejos del peligro.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Cambio de dirección en la corte (jurisdicción)</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">El cambio de jurisdicción en la corte permite trasladar un caso a un tribunal más conveniente o apropiado, según las circunstancias del cliente. Este proceso puede beneficiar al cliente al acercar el caso a su lugar de residencia o a una jurisdicción donde puedan obtener mejores resultados.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Solicitud de FOIA</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">Una solicitud FOIA (Freedom of Information Act) en el ámbito de inmigración permite acceder a registros gubernamentales relacionados con casos migratorios, como historiales de casos de deportación, solicitudes previas, registros de entrada y salida, entre otros.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Mociones en corte</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">Las mociones en corte, dentro del ámbito migratorio, son solicitudes formales presentadas al juez para resolver cuestiones específicas en un caso de inmigración. Estas mociones pueden ser fundamentales para desbloquear obstáculos legales o facilitar soluciones, especialmente en situaciones complejas como casos de deportación, ajustes de estatus o permisos especiales.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Petición familiar</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">Una petición familiar es el proceso mediante el cual un ciudadano estadounidense o residente permanente solicita que ciertos familiares califiquen para obtener una tarjeta de residencia (Green Card) y vivir legalmente en Estados Unidos. Este trámite es fundamental para reunir a las familias.</p>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="#" class="btn btn-forms mx-1">
+                                <i class="fas fa-file-signature"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card text-center">
+                        <i class="fas fa-user-check fa-3x"></i>
+                        <h4>Income tax</h4>
+                        <div class="serviceDescription">
+                            <p class="modal-description hidden">La declaración de impuestos es el proceso mediante el cual individuos o empresas reportan sus ingresos, gastos y otras obligaciones fiscales al gobierno. Es un requisito anual y esencial para cumplir con las leyes tributarias, además de ofrecer oportunidades para obtener reembolsos o créditos fiscales.</p>
+                        </div>
                         <div class="d-flex justify-content-center">
                             <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
                                 <i class="fab fa-whatsapp"></i>
@@ -129,7 +264,15 @@
                     </div>
                 </div>
             </div>
+
+                <div class="text-center">
+                    <button id="toggleServices" class="btn btn-primary"> 
+                        Ver más servicios <i class="fas fa-angle-down"></i>
+                    </button>
+                </div>
+            </div>
         </section>
+    
 
         <!-- Testimonios -->
         <section id="testimonios" class="mt-5">
@@ -249,8 +392,11 @@
     <div id="formModal" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeForm()">&times;</span>
-            <h4 id="serviceName"></h4>
-            <p id="serviceDescription"></p>
+            <div class="form-header">
+                <h4 id="serviceName"></h4>
+                <p id="idDescription">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.                    
+             </p>
+            </div>
             <form id="contactForm">
                 <div class="form-group">
                     <label for="name">Nombre:</label>
@@ -299,6 +445,7 @@
     function closeForm() {
         document.getElementById('formModal').style.display = "none";
     }
+    
 
     // Manejar el envío del formulario
     document.getElementById('contactForm').onsubmit = function(event) {
@@ -343,6 +490,60 @@
         dateFormat: "Y-m-d", // Formato de la fecha
         minDate: "today", // No permitir seleccionar fechas pasadas
     });
+
+    // Mostrar la descripción cuando se abre el formulario
+    function openForm(serviceName, cardDescription, modalDescription) {
+    document.getElementById('serviceName').innerText = serviceName;
+    document.getElementById('idDescription').innerHTML = modalDescription || cardDescription || '';
+    document.getElementById('formModal').style.display = "block";
+}
+
+document.querySelectorAll('.btn-forms').forEach(button => {
+    button.onclick = function() {
+        const card = this.closest('.service-card');
+        const serviceName = card.querySelector('h4').innerText;
+        const cardDescription = card.querySelector('.card-description') ? 
+            card.querySelector('.card-description').textContent : '';
+        const modalDescription = card.querySelector('.modal-description') ? 
+            card.querySelector('.modal-description').textContent : '';
+            
+        openForm(serviceName, cardDescription, modalDescription);
+    };
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ocultar servicios después de los primeros 3
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
+        if (index >= 3) {
+            card.classList.add('hidden');
+        }
+    });
+
+    // Manejar el botón de despliegue
+    const toggleButton = document.getElementById('toggleServices');
+    toggleButton.addEventListener('click', function() {
+        const hiddenCards = document.querySelectorAll('.service-card.hidden');
+        
+        if (hiddenCards.length > 0) {
+            // Mostrar servicios
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden');
+            });
+            toggleButton.classList.add('active');
+            toggleButton.innerHTML = 'Ver menos servicios <i class="fas fa-angle-up"></i>';
+        } else {
+            // Ocultar servicios (excepto los primeros 3)
+            serviceCards.forEach((card, index) => {
+                if (index >= 3) {
+                    card.classList.add('hidden');
+                }
+            });
+            toggleButton.classList.remove('active');
+            toggleButton.innerHTML = 'Ver más servicios <i class="fas fa-angle-down"></i>';
+        }
+    });
+});
 </script>
     
 </body>
