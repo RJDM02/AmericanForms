@@ -172,6 +172,17 @@ h2 {
     overflow: hidden !important;
 }
 
+#toggleServices {
+    background-color: #000537;
+    color: white;
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 #toggleServices.active #serviceButtonIcon {
     transform: rotate(180deg);    
     transition: transform 0.3s ease;
