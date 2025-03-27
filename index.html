@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>American Forms</title>
-    <link rel="icon" href="../AmericanForms-almacen/src/img/Logito.png">
+    <link rel="icon" href="../AmericanForms/src/img/Logito.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
@@ -16,8 +15,6 @@
             emailjs.init("k6r0FpQq5q6vFHVJY");
         })();
     </script>
-
-    
 </head>
 <body>
     <header id="inicio">
@@ -51,312 +48,580 @@
         </nav>
     </header>
     
-<!-- Subtítulo -->
-<div class="hero-subtitle">
-    <h2>No somos abogados en los Estados Unidos, pero estamos preparados para asistirte con las formas migratorias necesarias para tu legalidad en el país</h2>
-</div>
+    <!-- Subtítulo -->
+    <div class="hero-subtitle">
+        <h2>No somos abogados en los Estados Unidos, pero estamos preparados para asistirte con las formas migratorias necesarias para tu legalidad en el país</h2>
+    </div>
 
-    <!-- Sobre Mí -->
+    <!-- Sobre Mí - Versión Móvil y Desktop -->
     <section id="sobreMi" class="mt-5 text-center">
         <h2>Sobre Nosotros</h2>
-        <div class="row justify-content-center g-4">
-            <div class="col-md-3 info-section">
-                <h4>Biografía</h4>
-                <p class="fade-in">En American Forms, nos dedicamos a proporcionar servicios profesionales de preparación de formularios migratorios, ayudando a individuos y familias a navegar los procesos administrativos con confianza y precisión. Aunque no somos abogados y no ofrecemos asesoramiento legal, estamos comprometidos a apoyar a nuestros clientes con herramientas claras y orientación experta para cumplir con los requisitos de las autoridades migratorias. Nuestro objetivo es simplificar trámites y ofrecer un servicio honesto y accesible a quienes buscan construir un futuro en los Estados Unidos.</p>
+        
+        <!-- Versión Móvil (Carrusel) -->
+        <div class="d-lg-none">
+            <div id="carouselSobreMi" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="info-section mx-auto" style="width: 90%;">
+                            <h4>Biografía</h4>
+                            <p class="fade-in">En American Forms, nos dedicamos a proporcionar servicios profesionales de preparación de formularios migratorios, ayudando a individuos y familias a navegar los procesos administrativos con confianza y precisión. Aunque no somos abogados y no ofrecemos asesoramiento legal, estamos comprometidos a apoyar a nuestros clientes con herramientas claras y orientación experta para cumplir con los requisitos de las autoridades migratorias. Nuestro objetivo es simplificar trámites y ofrecer un servicio honesto y accesible a quienes buscan construir un futuro en los Estados Unidos.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="info-section mx-auto" style="width: 90%;">
+                            <h4>Misión</h4>
+                            <p class="fade-in">American Forms nació con el propósito de facilitar el acceso a servicios de preparación de documentos para la comunidad de los Estados Unidos de América. Reconociendo la creciente necesidad de apoyo en trámites legales, administrativos y personales, esta empresa se fundó con la misión de ofrecer soluciones rápidas, confiables y económicas. Desde su inicio, American Forms se ha especializado en la preparación de documentos como contratos, formularios legales, solicitudes oficiales y más, enfocándose siempre en la atención personalizada y en las necesidades de cada cliente. A través de su dedicación, American Forms se ha ganado una reputación como un aliado confiable en la preparación de documentación, ayudando a simplificar procesos complejos para individuos y empresas en la región.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="info-section mx-auto" style="width: 90%;">
+                            <h4>Visión</h4>
+                            <p class="fade-in">En American Forms, nuestra visión es convertirnos en el aliado líder en la preparación de documentos en Dallas-Fort Worth, brindando a nuestra comunidad soluciones accesibles, precisas y personalizadas. Nos esforzamos por simplificar los procesos más complejos, ofreciendo un servicio confiable que empodere a individuos y empresas para alcanzar sus metas de manera eficiente. Aspiramos a ser reconocidos como un ejemplo de excelencia, compromiso y apoyo en cada interacción.</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselSobreMi" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselSobreMi" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
             </div>
-            <div class="col-md-3 info-section mx-4">
-                <h4>Misión</h4>
-                <p class="fade-in">American Forms nació con el propósito de facilitar el acceso a servicios de preparación de documentos para la comunidad de los Estados Unidos de América. Reconociendo la creciente necesidad de apoyo en trámites legales, administrativos y personales, esta empresa se fundó con la misión de ofrecer soluciones rápidas, confiables y económicas. Desde su inicio, American Forms se ha especializado en la preparación de documentos como contratos, formularios legales, solicitudes oficiales y más, enfocándose siempre en la atención personalizada y en las necesidades de cada cliente. A través de su dedicación, American Forms se ha ganado una reputación como un aliado confiable en la preparación de documentación, ayudando a simplificar procesos complejos para individuos y empresas en la región.</p>
-            </div>
-            <div class="col-md-3 info-section">
-                <h4>Visión</h4>
-                <p class="fade-in">En American Forms, nuestra visión es convertirnos en el aliado líder en la preparación de documentos en Dallas-Fort Worth, brindando a nuestra comunidad soluciones accesibles, precisas y personalizadas. Nos esforzamos por simplificar los procesos más complejos, ofreciendo un servicio confiable que empodere a individuos y empresas para alcanzar sus metas de manera eficiente. Aspiramos a ser reconocidos como un ejemplo de excelencia, compromiso y apoyo en cada interacción.</p>
+        </div>
+        
+        <!-- Versión Desktop (Grid) -->
+        <div class="d-none d-lg-block">
+            <div class="row justify-content-center g-4">
+                <div class="col-md-3 info-section">
+                    <h4>Biografía</h4>
+                    <p class="fade-in">En American Forms, nos dedicamos a proporcionar servicios profesionales de preparación de formularios migratorios, ayudando a individuos y familias a navegar los procesos administrativos con confianza y precisión. Aunque no somos abogados y no ofrecemos asesoramiento legal, estamos comprometidos a apoyar a nuestros clientes con herramientas claras y orientación experta para cumplir con los requisitos de las autoridades migratorias. Nuestro objetivo es simplificar trámites y ofrecer un servicio honesto y accesible a quienes buscan construir un futuro en los Estados Unidos.</p>
+                </div>
+                <div class="col-md-3 info-section mx-4">
+                    <h4>Misión</h4>
+                    <p class="fade-in">American Forms nació con el propósito de facilitar el acceso a servicios de preparación de documentos para la comunidad de los Estados Unidos de América. Reconociendo la creciente necesidad de apoyo en trámites legales, administrativos y personales, esta empresa se fundó con la misión de ofrecer soluciones rápidas, confiables y económicas. Desde su inicio, American Forms se ha especializado en la preparación de documentos como contratos, formularios legales, solicitudes oficiales y más, enfocándose siempre en la atención personalizada y en las necesidades de cada cliente. A través de su dedicación, American Forms se ha ganado una reputación como un aliado confiable en la preparación de documentación, ayudando a simplificar procesos complejos para individuos y empresas en la región.</p>
+                </div>
+                <div class="col-md-3 info-section">
+                    <h4>Visión</h4>
+                    <p class="fade-in">En American Forms, nuestra visión es convertirnos en el aliado líder en la preparación de documentos en Dallas-Fort Worth, brindando a nuestra comunidad soluciones accesibles, precisas y personalizadas. Nos esforzamos por simplificar los procesos más complejos, ofreciendo un servicio confiable que empodere a individuos y empresas para alcanzar sus metas de manera eficiente. Aspiramos a ser reconocidos como un ejemplo de excelence, compromiso y apoyo en cada interacción.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <div class="container">
-        <!-- Servicios -->
+        <!-- Servicios - Versión Móvil y Desktop -->
         <section id="servicios" class="mt-5 py-5">
             <div class="container">
                 <h2 class="text-center">Servicios</h2>
                 <div class="bg-white py-4 px-3 rounded">
-                <div class="row">
-                <!-- Servicios visibles por defecto -->
-                <div class="services-container">
-                    <!-- Tus 3 primeros servicios aquí -->
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-briefcase fa-3x"></i>
-                            <h4>Autorización de empleo</h4>
-                            <div class="serviceDescription">
-                                <p class="modal-description hidden">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.</p>
+                    
+                    <!-- Versión Móvil (Carrusel) -->
+                    <div class="d-lg-none">
+                        <div id="carouselServicios" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <!-- Servicio 1 -->
+                                <div class="carousel-item active">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-briefcase fa-3x"></i>
+                                        <h4>Autorización de empleo</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 2 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-file-signature fa-3x"></i>
+                                        <h4>Solicitud de residencia permanente bajo la ley de ajuste cubano</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">La Ley de Ajuste Cubano es una legislación que permite a los ciudadanos cubanos que han llegado a Estados Unidos quedarse en el país y obtener su residencia permanente legal, siempre que cumplan ciertos requisitos. Por ejemplo, deben haber vivido en Estados Unidos durante al menos un año antes de presentar su solicitud. Esta ley se creó para ayudar a los cubanos que escapaban de dificultades en su país.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 3 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Cambio de dirección</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">Actualizar tu dirección en Estados Unidos es esencial para mantener tu información al día con las autoridades, instituciones bancarias, y otros servicios. Esto garantiza que recibas correspondencia importante, como notificaciones legales, beneficios gubernamentales o documentos relacionados con inmigración. Además, es clave para cumplir con ciertos requisitos legales, como los de tu registro migratorio o las actualizaciones de tu licencia de conducir. ¡Mantener todo al día evita problemas y te da tranquilidad!</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 4 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Asilo</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">El asilo en Estados Unidos es una protección legal para personas que enfrentan persecución en su país de origen debido a su raza, religión, nacionalidad, opiniones políticas o pertenencia a un grupo social particular. Al solicitar asilo, los individuos pueden construir un futuro seguro y estable, lejos del peligro.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 5 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Cambio de dirección en la corte (jurisdicción)</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">El cambio de jurisdicción en la corte permite trasladar un caso a un tribunal más conveniente o apropiado, según las circunstancias del cliente. Este proceso puede beneficiar al cliente al acercar el caso a su lugar de residencia o a una jurisdicción donde puedan obtener mejores resultados.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 6 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Solicitud de FOIA</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">Una solicitud FOIA (Freedom of Information Act) en el ámbito de inmigración permite acceder a registros gubernamentales relacionados con casos migratorios, como historiales de casos de deportación, solicitudes previas, registros de entrada y salida, entre otros.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 7 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Mociones en corte</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">Las mociones en corte, dentro del ámbito migratorio, son solicitudes formales presentadas al juez para resolver cuestiones específicas en un caso de inmigración. Estas mociones pueden ser fundamentales para desbloquear obstáculos legales o facilitar soluciones, especialmente en situaciones complejas como casos de deportación, ajustes de estatus o permisos especiales.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 8 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Petición familiar</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">Una petición familiar es el proceso mediante el cual un ciudadano estadounidense o residente permanente solicita que ciertos familiares califiquen para obtener una tarjeta de residencia (Green Card) y vivir legalmente en Estados Unidos. Este trámite es fundamental para reunir a las familias.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <!-- Servicio 9 -->
+                                <div class="carousel-item">
+                                    <div class="service-card text-center mx-auto" style="width: 90%;">
+                                        <i class="fas fa-user-check fa-3x"></i>
+                                        <h4>Income tax</h4>
+                                        <div class="serviceDescription">
+                                            <p class="modal-description">La declaración de impuestos es el proceso mediante el cual individuos o empresas reportan sus ingresos, gastos y otras obligaciones fiscales al gobierno. Es un requisito anual y esencial para cumplir con las leyes tributarias, además de ofrecer oportunidades para obtener reembolsos o créditos fiscales.</p>
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                                <i class="fab fa-whatsapp"></i>
+                                            </a>
+                                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                                <i class="fas fa-envelope"></i>
+                                            </a>
+                                            <a href="#" class="btn btn-forms mx-1">
+                                                <i class="fas fa-file-signature"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                                <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
+                            <a class="carousel-control-prev" href="#carouselServicios" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
                             </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
+                            <a class="carousel-control-next" href="#carouselServicios" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
                             </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-file-signature fa-3x"></i>
-                        <h4>Solicitud de residencia permanente bajo la ley de ajuste cubano</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">La Ley de Ajuste Cubano es una legislación que permite a los ciudadanos cubanos que han llegado a Estados Unidos quedarse en el país y obtener su residencia permanente legal, siempre que cumplan ciertos requisitos. Por ejemplo, deben haber vivido en Estados Unidos durante al menos un año antes de presentar su solicitud. Esta ley se creó para ayudar a los cubanos que escapaban de dificultades en su país.</p>
+                    
+                    <!-- Versión Desktop (Grid) -->
+                    <div class="d-none d-lg-block">
+                        <div class="row">
+                            <!-- Servicio 1 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center">
+                                    <i class="fas fa-briefcase fa-3x"></i>
+                                    <h4>Autorización de empleo</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 2 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center">
+                                    <i class="fas fa-file-signature fa-3x"></i>
+                                    <h4>Solicitud de residencia permanente bajo la ley de ajuste cubano</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description">La Ley de Ajuste Cubano es una legislación que permite a los ciudadanos cubanos que han llegado a Estados Unidos quedarse en el país y obtener su residencia permanente legal, siempre que cumplan ciertos requisitos. Por ejemplo, deben haber vivido en Estados Unidos durante al menos un año antes de presentar su solicitud. Esta ley se creó para ayudar a los cubanos que escapaban de dificultades en su país.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 3 -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Cambio de dirección</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description">Actualizar tu dirección en Estados Unidos es esencial para mantener tu información al día con las autoridades, instituciones bancarias, y otros servicios. Esto garantiza que recibas correspondencia importante, como notificaciones legales, beneficios gubernamentales o documentos relacionados con inmigración. Además, es clave para cumplir con ciertos requisitos legales, como los de tu registro migratorio o las actualizaciones de tu licencia de conducir. ¡Mantener todo al día evita problemas y te da tranquilidad!</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 4 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Asilo</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">El asilo en Estados Unidos es una protección legal para personas que enfrentan persecución en su país de origen debido a su raza, religión, nacionalidad, opiniones políticas o pertenencia a un grupo social particular. Al solicitar asilo, los individuos pueden construir un futuro seguro y estable, lejos del peligro.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 5 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Cambio de dirección en la corte (jurisdicción)</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">El cambio de jurisdicción en la corte permite trasladar un caso a un tribunal más conveniente o apropiado, según las circunstancias del cliente. Este proceso puede beneficiar al cliente al acercar el caso a su lugar de residencia o a una jurisdicción donde puedan obtener mejores resultados.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 6 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Solicitud de FOIA</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">Una solicitud FOIA (Freedom of Information Act) en el ámbito de inmigración permite acceder a registros gubernamentales relacionados con casos migratorios, como historiales de casos de deportación, solicitudes previas, registros de entrada y salida, entre otros.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 7 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Mociones en corte</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">Las mociones en corte, dentro del ámbito migratorio, son solicitudes formales presentadas al juez para resolver cuestiones específicas en un caso de inmigración. Estas mociones pueden ser fundamentales para desbloquear obstáculos legales o facilitar soluciones, especialmente en situaciones complejas como casos de deportación, ajustes de estatus o permisos especiales.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 8 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Petición familiar</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">Una petición familiar es el proceso mediante el cual un ciudadano estadounidense o residente permanente solicita que ciertos familiares califiquen para obtener una tarjeta de residencia (Green Card) y vivir legalmente en Estados Unidos. Este trámite es fundamental para reunir a las familias.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Servicio 9 (oculto inicialmente) -->
+                            <div class="col-md-4 mb-4">
+                                <div class="service-card text-center hidden">
+                                    <i class="fas fa-user-check fa-3x"></i>
+                                    <h4>Income tax</h4>
+                                    <div class="serviceDescription">
+                                        <p class="modal-description hidden">La declaración de impuestos es el proceso mediante el cual individuos o empresas reportan sus ingresos, gastos y otras obligaciones fiscales al gobierno. Es un requisito anual y esencial para cumplir con las leyes tributarias, además de ofrecer oportunidades para obtener reembolsos o créditos fiscales.</p>
+                                    </div>
+                                    <div class="d-flex justify-content-center">
+                                        <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
+                                            <i class="fab fa-whatsapp"></i>
+                                        </a>
+                                        <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                        <a href="#" class="btn btn-forms mx-1">
+                                            <i class="fas fa-file-signature"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
+                        <div class="text-center mt-4">
+                            <button id="toggleServices" class="btn btn-primary"> 
+                                Ver más servicios <i class="fas fa-angle-down"></i>
+                            </button>
+                        </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Cambio de dirección</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">Actualizar tu dirección en Estados Unidos es esencial para mantener tu información al día con las autoridades, instituciones bancarias, y otros servicios. Esto garantiza que recibas correspondencia importante, como notificaciones legales, beneficios gubernamentales o documentos relacionados con inmigración. Además, es clave para cumplir con ciertos requisitos legales, como los de tu registro migratorio o las actualizaciones de tu licencia de conducir. ¡Mantener todo al día evita problemas y te da tranquilidad!</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Asilo</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">El asilo en Estados Unidos es una protección legal para personas que enfrentan persecución en su país de origen debido a su raza, religión, nacionalidad, opiniones políticas o pertenencia a un grupo social particular. Al solicitar asilo, los individuos pueden construir un futuro seguro y estable, lejos del peligro.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Cambio de dirección en la corte (jurisdicción)</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">El cambio de jurisdicción en la corte permite trasladar un caso a un tribunal más conveniente o apropiado, según las circunstancias del cliente. Este proceso puede beneficiar al cliente al acercar el caso a su lugar de residencia o a una jurisdicción donde puedan obtener mejores resultados.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Solicitud de FOIA</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">Una solicitud FOIA (Freedom of Information Act) en el ámbito de inmigración permite acceder a registros gubernamentales relacionados con casos migratorios, como historiales de casos de deportación, solicitudes previas, registros de entrada y salida, entre otros.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Mociones en corte</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">Las mociones en corte, dentro del ámbito migratorio, son solicitudes formales presentadas al juez para resolver cuestiones específicas en un caso de inmigración. Estas mociones pueden ser fundamentales para desbloquear obstáculos legales o facilitar soluciones, especialmente en situaciones complejas como casos de deportación, ajustes de estatus o permisos especiales.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Petición familiar</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">Una petición familiar es el proceso mediante el cual un ciudadano estadounidense o residente permanente solicita que ciertos familiares califiquen para obtener una tarjeta de residencia (Green Card) y vivir legalmente en Estados Unidos. Este trámite es fundamental para reunir a las familias.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="service-card text-center">
-                        <i class="fas fa-user-check fa-3x"></i>
-                        <h4>Income tax</h4>
-                        <div class="serviceDescription">
-                            <p class="modal-description hidden">La declaración de impuestos es el proceso mediante el cual individuos o empresas reportan sus ingresos, gastos y otras obligaciones fiscales al gobierno. Es un requisito anual y esencial para cumplir con las leyes tributarias, además de ofrecer oportunidades para obtener reembolsos o créditos fiscales.</p>
-                        </div>
-                        <div class="d-flex justify-content-center">
-                            <a href="https://wa.me/16823920876" class="btn btn-whatsapp mx-1">
-                                <i class="fab fa-whatsapp"></i>
-                            </a>
-                            <a href="mailto:yosaryfagundo27@gmail.com" class="btn btn-correo mx-1">
-                                <i class="fas fa-envelope"></i>
-                            </a>
-                            <a href="#" class="btn btn-forms mx-1">
-                                <i class="fas fa-file-signature"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div>
-                    <button id="toggleServices" class="btn btn-primary" class="text-center mt-4"> 
-                        Ver más servicios <i class="fas fa-angle-down"></i>
-                    </button>
-                </div>
-            </div>
-
-            </div>
-            </div>  
             </div>
         </section>
-    
 
         <!-- Testimonios -->
         <section id="testimonios" class="mt-5 py-5">
             <div class="container">
                 <h2 class="text-center mb-5">Testimonios</h2>
                 <div class="bg-white py-4 px-3 rounded">
-                <div id="carouselTestimonios" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Grupo 1 (activo) -->
-                        <div class="carousel-item active">
-                            <div class="row">
-                                <!-- Testimonio 1 -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="testimony-card p-4 h-100">
-                                        <div class="testimony-content">
-                                            <h4>Persona 1</h4>
-                                            <p class="mb-3">"Muchas gracias, estoy encantada con el servicio al cliente con la buena energía, me han ayudado muchísimo en este proceso, lo recomiendo 100% y lo estaré recomendando para toda mi gente."</p>
+                    <div id="carouselTestimonios" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Grupo 1 (activo) -->
+                            <div class="carousel-item active">
+                                <div class="row">
+                                    <!-- Testimonio 1 -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="testimony-card p-4 h-100">
+                                            <div class="testimony-content">
+                                                <h4>Persona 1</h4>
+                                                <p class="mb-3">"Muchas gracias, estoy encantada con el servicio al cliente con la buena energía, me han ayudado muchísimo en este proceso, lo recomiendo 100% y lo estaré recomendando para toda mi gente."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonio 2 -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="testimony-card p-4 h-100">
+                                            <div class="testimony-content">
+                                                <h4>Persona 2</h4>
+                                                <p class="mb-3">"Muchas gracias al equipo de American Forms, por toda la ayuda que me han brindado, por despejar las dudas en mis procesos de migracion, y siempre estar al tanto de los mismos, 100% recomendados."</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- Testimonio 3 -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="testimony-card p-4 h-100">
+                                            <div class="testimony-content">
+                                                <h4>Persona 3</h4>
+                                                <p class="mb-3">"Buenas días, gracias al equipo de American Forms, por ayudarme con las dudas en mis procesos de migracion, y siempre estar preocupado 100% recomendado muchas gracias."</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                
-                                <!-- Testimonio 2 -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="testimony-card p-4 h-100">
-                                        <div class="testimony-content">
-                                            <h4>Persona 2</h4>
-                                            <p class="mb-3">"Muchas gracias al equipo de American Forms, por toda la ayuda que me han brindado, por despejar las dudas en mis procesos de migracion, y siempre estar al tanto de los mismos, 100% recomendados."</p>
+                            </div>
+                            
+                            <!-- Grupo 2 -->
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <!-- Testimonio 4 -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="testimony-card p-4 h-100">
+                                            <div class="testimony-content">
+                                                <h4>Persona 4</h4>
+                                                <p class="mb-3">"Estoy muy satisfecho con el servicio recibido por parte de American Forms. Fueron amables y pacientes, respondiendo a todas mis preguntas sin prisa. Su enfoque en el cliente me hizo sentir valorado y seguro durante todo el proceso."</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                
-                                <!-- Testimonio 3 -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="testimony-card p-4 h-100">
-                                        <div class="testimony-content">
-                                            <h4>Persona 3</h4>
-                                            <p class="mb-3">"Buenas días, gracias al equipo de American Forms, por ayudarme con las dudas en mis procesos de migracion, y siempre estar preocupado 100% recomendado muchas gracias."</p>    
+                                    
+                                    <!-- Testimonio 5 -->
+                                    <div class="col-md-4 mb-4">
+                                        <div class="testimony-card p-4 h-100">
+                                            <div class="testimony-content">
+                                                <h4>Persona 5</h4>
+                                                <p class="mb-3">"Muchas gracias por su ayuda. Su servicio fue extremadamente eficiente y profesional. Se me explicó claramente cada paso del proceso y se aseguraron de que entendiera todos los documentos antes de firmar."</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         
-                        <!-- Grupo 2 -->
-                        <div class="carousel-item">
-                            <div class="row">
-                                <!-- Testimonio 4 -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="testimony-card p-4 h-100">
-                                        <div class="testimony-content">
-                                            <h4>Persona 4</h4>
-                                            <p class="mb-3">"Estoy muy satisfecho con el servicio recibido por parte de American Forms. Fueron amables y pacientes, respondiendo a todas mis preguntas sin prisa. Su enfoque en el cliente me hizo sentir valorado y seguro durante todo el proceso."</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Testimonio 5 -->
-                                <div class="col-md-4 mb-4">
-                                    <div class="testimony-card p-4 h-100">
-                                        <div class="testimony-content">
-                                            <h4>Persona 5</h4>
-                                            <p class="mb-3">"Muchas gracias por su ayuda. Su servicio fue extremadamente eficiente y profesional. Se me explicó claramente cada paso del proceso y se aseguraron de que entendiera todos los documentos antes de firmar."</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- Controles del carrusel -->
+                        <a class="carousel-control-prev" href="#carouselTestimonios" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselTestimonios" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
+                            <span class="sr-only">Siguiente</span>
+                        </a>
                     </div>
-                    
-                    <!-- Controles del carrusel -->
-                    <a class="carousel-control-prev" href="#carouselTestimonios" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-                        <span class="sr-only">Anterior</span>
-                    </a>
-                    <a class="carousel-control-next" href="#carouselTestimonios" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon bg-dark rounded-circle p-3" aria-hidden="true"></span>
-                        <span class="sr-only">Siguiente</span>
-                    </a>
                 </div>
-            </div>
             </div>
         </section>
 
@@ -418,8 +683,7 @@
             <span class="close" onclick="closeForm()">&times;</span>
             <div class="form-header">
                 <h4 id="serviceName"></h4>
-                <p id="idDescription">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.                    
-             </p>
+                <p id="idDescription">"Documento de Autorización de Empleo" (Employment Authorization Document o EAD). Este permiso es necesario para ciertas personas, como aquellos que tienen visas específicas, están solicitando asilo o tienen un estado migratorio temporal. Es una parte importante del sistema de inmigración para garantizar que el empleo esté regulado conforme a las leyes.</p>
             </div>
             <form id="contactForm">
                 <div class="form-group">
@@ -445,22 +709,42 @@
         </div>
     </div>
     
-
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="src/scripts/animacion.js"></script> 
+    <script src="src/scripts/mov.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 
     <script>
     // Inicializar Flatpickr
     flatpickr("#date", {
-        dateFormat: "Y-m-d", // Formato de la fecha
-        minDate: "today", // No permitir seleccionar fechas pasadas
+        dateFormat: "Y-m-d",
+        minDate: "today",
     });
-    </script>
 
-<script>
+    // Función para ajustar el diseño según el dispositivo
+    function adjustForMobile() {
+        const isMobile = window.matchMedia("(max-width: 991px)").matches;
+        
+        if (isMobile) {
+            // Mostrar todos los servicios en móvil
+            document.querySelectorAll('.service-card.hidden').forEach(card => {
+                card.classList.remove('hidden');
+            });
+            
+            // Ocultar botón "Ver más servicios" en móvil
+            document.getElementById('toggleServices').style.display = 'none';
+            
+            // Inicializar carruseles
+            $('.carousel').carousel();
+        }
+    }
+
+    // Ejecutar al cargar y al redimensionar
+    window.addEventListener('DOMContentLoaded', adjustForMobile);
+    window.addEventListener('resize', adjustForMobile);
+
     function openForm(serviceName, serviceDescription) {
         document.getElementById('serviceName').innerText = serviceName;
         document.getElementById('formModal').style.display = "block";
@@ -470,19 +754,16 @@
         document.getElementById('formModal').style.display = "none";
     }
     
-
     // Manejar el envío del formulario
     document.getElementById('contactForm').onsubmit = function(event) {
-        event.preventDefault(); // Prevenir el envío real
+        event.preventDefault();
         
-        // Obtener los valores del formulario
         const name = document.getElementById('name').value;
         const phone = document.getElementById('phone').value;
         const date = document.getElementById('date').value;
         const email = document.getElementById('email').value;
         const serviceName = document.getElementById('serviceName').innerText;
 
-        // Enviar el correo usando EmailJS
         emailjs.send("service_b8vu7jh", "template_7nnqaxh", {
             from_name: name,
             from_phone: phone,
@@ -493,7 +774,7 @@
         .then(function(response) {
             console.log('SUCCESS!', response.status, response.text);
             alert("Formulario enviado exitosamente!");
-            closeForm(); // Cerrar formulario después de enviar
+            closeForm();
         }, function(error) {
             console.log('FAILED...', error);
             alert("Error al enviar el formulario. Intenta nuevamente.");
@@ -509,66 +790,63 @@
         };
     });
 
-    // Inicializar Flatpickr
-    flatpickr("#date", {
-        dateFormat: "Y-m-d", // Formato de la fecha
-        minDate: "today", // No permitir seleccionar fechas pasadas
-    });
-
     // Mostrar la descripción cuando se abre el formulario
     function openForm(serviceName, cardDescription, modalDescription) {
-    document.getElementById('serviceName').innerText = serviceName;
-    document.getElementById('idDescription').innerHTML = modalDescription || cardDescription || '';
-    document.getElementById('formModal').style.display = "block";
-}
+        document.getElementById('serviceName').innerText = serviceName;
+        document.getElementById('idDescription').innerHTML = modalDescription || cardDescription || '';
+        document.getElementById('formModal').style.display = "block";
+    }
 
-document.querySelectorAll('.btn-forms').forEach(button => {
-    button.onclick = function() {
-        const card = this.closest('.service-card');
-        const serviceName = card.querySelector('h4').innerText;
-        const cardDescription = card.querySelector('.card-description') ? 
-            card.querySelector('.card-description').textContent : '';
-        const modalDescription = card.querySelector('.modal-description') ? 
-            card.querySelector('.modal-description').textContent : '';
-            
-        openForm(serviceName, cardDescription, modalDescription);
-    };
-});
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Ocultar servicios después de los primeros 3
-    const serviceCards = document.querySelectorAll('.service-card');
-    serviceCards.forEach((card, index) => {
-        if (index >= 3) {
-            card.classList.add('hidden');
-        }
+    document.querySelectorAll('.btn-forms').forEach(button => {
+        button.onclick = function() {
+            const card = this.closest('.service-card');
+            const serviceName = card.querySelector('h4').innerText;
+            const cardDescription = card.querySelector('.card-description') ? 
+                card.querySelector('.card-description').textContent : '';
+            const modalDescription = card.querySelector('.modal-description') ? 
+                card.querySelector('.modal-description').textContent : '';
+                
+            openForm(serviceName, cardDescription, modalDescription);
+        };
     });
 
-    // Manejar el botón de despliegue
-    const toggleButton = document.getElementById('toggleServices');
-    toggleButton.addEventListener('click', function() {
-        const hiddenCards = document.querySelectorAll('.service-card.hidden');
-        
-        if (hiddenCards.length > 0) {
-            // Mostrar servicios
-            hiddenCards.forEach(card => {
-                card.classList.remove('hidden');
-            });
-            toggleButton.classList.add('active');
-            toggleButton.innerHTML = 'Ver menos servicios <i class="fas fa-angle-up"></i>';
-        } else {
-            // Ocultar servicios (excepto los primeros 3)
+    document.addEventListener('DOMContentLoaded', function() {
+        // Ocultar servicios después de los primeros 3 (solo en desktop)
+        if (window.matchMedia("(min-width: 992px)").matches) {
+            const serviceCards = document.querySelectorAll('.service-card');
             serviceCards.forEach((card, index) => {
                 if (index >= 3) {
                     card.classList.add('hidden');
                 }
             });
-            toggleButton.classList.remove('active');
-            toggleButton.innerHTML = 'Ver más servicios <i class="fas fa-angle-down"></i>';
+
+            // Manejar el botón de despliegue
+            const toggleButton = document.getElementById('toggleServices');
+            if (toggleButton) {
+                toggleButton.addEventListener('click', function() {
+                    const hiddenCards = document.querySelectorAll('.service-card.hidden');
+                    
+                    if (hiddenCards.length > 0) {
+                        // Mostrar servicios
+                        hiddenCards.forEach(card => {
+                            card.classList.remove('hidden');
+                        });
+                        toggleButton.classList.add('active');
+                        toggleButton.innerHTML = 'Ver menos servicios <i class="fas fa-angle-up"></i>';
+                    } else {
+                        // Ocultar servicios (excepto los primeros 3)
+                        serviceCards.forEach((card, index) => {
+                            if (index >= 3) {
+                                card.classList.add('hidden');
+                            }
+                        });
+                        toggleButton.classList.remove('active');
+                        toggleButton.innerHTML = 'Ver más servicios <i class="fas fa-angle-down"></i>';
+                    }
+                });
+            }
         }
     });
-});
-</script>
-    
+    </script>
 </body>
 </html>
