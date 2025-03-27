@@ -811,43 +811,52 @@
         };
     });
 
-    document.addEventListener('DOMContentLoaded', function() {
-        // Ocultar servicios después de los primeros 3 (solo en desktop)
-        if (window.matchMedia("(min-width: 992px)").matches) {
-            const serviceCards = document.querySelectorAll('.service-card');
+    document.querySelectorAll('.btn-forms').forEach(button => {
+    button.onclick = function() {
+        const card = this.closest('.service-card');
+        const serviceName = card.querySelector('h4').innerText;
+        const cardDescription = card.querySelector('.card-description') ? 
+            card.querySelector('.card-description').textContent : '';
+        const modalDescription = card.querySelector('.modal-description') ? 
+            card.querySelector('.modal-description').textContent : '';
+            
+        openForm(serviceName, cardDescription, modalDescription);
+    };
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ocultar servicios después de los primeros 3
+    const serviceCards = document.querySelectorAll('.service-card');
+    serviceCards.forEach((card, index) => {
+        if (index >= 3) {
+            card.classList.add('hidden');
+        }
+    });
+
+    // Manejar el botón de despliegue
+    const toggleButton = document.getElementById('toggleServices');
+    toggleButton.addEventListener('click', function() {
+        const hiddenCards = document.querySelectorAll('.service-card.hidden');
+        
+        if (hiddenCards.length > 0) {
+            // Mostrar servicios
+            hiddenCards.forEach(card => {
+                card.classList.remove('hidden');
+            });
+            toggleButton.classList.add('active');
+            toggleButton.innerHTML = 'Ver menos servicios <i class="fas fa-angle-up"></i>';
+        } else {
+            // Ocultar servicios (excepto los primeros 3)
             serviceCards.forEach((card, index) => {
                 if (index >= 3) {
                     card.classList.add('hidden');
                 }
             });
-
-            // Manejar el botón de despliegue
-            const toggleButton = document.getElementById('toggleServices');
-            if (toggleButton) {
-                toggleButton.addEventListener('click', function() {
-                    const hiddenCards = document.querySelectorAll('.service-card.hidden');
-                    
-                    if (hiddenCards.length > 0) {
-                        // Mostrar servicios
-                        hiddenCards.forEach(card => {
-                            card.classList.remove('hidden');
-                        });
-                        toggleButton.classList.add('active');
-                        toggleButton.innerHTML = 'Ver menos servicios <i class="fas fa-angle-up"></i>';
-                    } else {
-                        // Ocultar servicios (excepto los primeros 3)
-                        serviceCards.forEach((card, index) => {
-                            if (index >= 3) {
-                                card.classList.add('hidden');
-                            }
-                        });
-                        toggleButton.classList.remove('active');
-                        toggleButton.innerHTML = 'Ver más servicios <i class="fas fa-angle-down"></i>';
-                    }
-                });
-            }
+            toggleButton.classList.remove('active');
+            toggleButton.innerHTML = 'Ver más servicios <i class="fas fa-angle-down"></i>';
         }
     });
+});
     </script>
 </body>
 </html>
