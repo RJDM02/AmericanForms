@@ -1,4 +1,4 @@
-/* Estilos generales del body */
+/* ===== ESTILOS GENERALES ===== */
 body {
     margin: 0;
     background-color: blanchedalmond;
@@ -9,7 +9,6 @@ body {
     color: #000000;
 }
 
-/* Estilos para los encabezados h2 */
 h2 {
     text-align: center;
     margin-top: 40px;
@@ -22,7 +21,7 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
-/* Estilos del navbar */
+/* ===== NAVBAR ===== */
 .navbar {
     background-color: #000537;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -44,6 +43,7 @@ h2 {
     width: 100%;
 }
 
+/* ===== HERO SECTION ===== */
 .hero-subtitle {
     text-align: center;
     padding: 1rem 0;
@@ -57,7 +57,7 @@ h2 {
     margin: 0;
 }
 
-/* Estilos para el carrusel */
+/* ===== CARRUSEL PRINCIPAL ===== */
 #carouselInicio .carousel-item img {
     height: 700px;
     object-fit: cover;
@@ -66,36 +66,6 @@ h2 {
 .carousel-item img {
     height: 440px;
     object-fit: cover;
-}
-
-/* Estilos para la nueva sección de testimonios */
-.testimony-card {
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    height: 100%;
-}
-
-.testimony-card:hover {
-    transform: translateY(-5px);
-}
-
-.testimony-content {
-    padding: 20px;
-}
-
-.social-link {
-    color: #6c757d;
-    text-decoration: none;
-    font-size: 0.9rem;
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.social-link:hover {
-    color: #007bff;
-    text-decoration: underline;
 }
 
 .carousel-control-prev-icon,
@@ -108,127 +78,13 @@ h2 {
     width: 5%;
 }
 
-#testimonios {
-    padding: 40px 0 60px; 
-    background-color: transparent; 
-}
-
-/* Estilos para las tarjetas de servicio */
-#servicios {
-    padding: 40px 0;
-    background-color: transparent;
-}
-
-#servicios .bg-white {
-    padding: 30px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    border-radius: 10px;
-}
-
-.service-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
-    height: 95%;
-}
-
-.service-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
-/* Estilos para los botones */
-.btn {
-    width: 200px;
-}
-
-.btn-whatsapp {
-    background-color: #25D366;
-    color: #FFFFFF;
-}
-
-.btn-correo {
-    background-color: #05003e;
-    color: #FFFFFF;
-}
-
-.btn-forms {
-    background-color: #a30000;
-    color: #FFFFFF;
-}
-
-.btn-whatsapp:hover, .btn-correo:hover {
-    opacity: 0.8;
-}
-
-/* Estilos para los iconos sociales */
-.social-icons a {
-    background-color: white;
-    border-radius: 50%;
-    color: #333;
-    display: inline-block;
-    height: 40px;
-    line-height: 40px;
-    margin: 0 5px;
-    text-align: center;
-    width: 40px;
-}
-
-.social-icons a:hover {
-    background-color: #333;
-    color: white;
-}
-
-/* Estilos para la sección de contacto */
-#contacto {
-    background-color: #05003e;
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    padding: 60px 30px;
-}
-
-/* ESTILOS MEJORADOS PARA EL CARRUSEL DE CONTACTO */
-#contacto .carousel {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-
-#contacto .carousel-inner {
-    border-radius: 10px;
-}
-
-#contacto .carousel-item img {
-    border-radius: 10px;
-    height: 350px;
-    object-fit: cover;
-    width: 100%;
-}
-
-#contacto .testimony-card {
-    border-radius: 10px 10px 0 0;
-}
-
-.contact-text {
-    margin-top: 30px;
-    text-align: right;
-    color: white;
-}
-
-/* ESTILOS MEJORADOS PARA SOBRE NOSOTROS */
+/* ===== SOBRE NOSOTROS ===== */
 #sobreMi .info-section {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 20px;
     border-radius: 10px;
     margin-bottom: 30px;
-    height: 400px; /* Altura fija */
+    height: 400px;
     display: flex;
     flex-direction: column;
 }
@@ -266,22 +122,198 @@ h2 {
     background: #555;
 }
 
-/* Animación de aparición */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+/* ===== SERVICIOS - VERSIÓN DESKTOP ===== */
+#servicios {
+    padding: 40px 0;
+    background-color: transparent;
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
+#servicios .bg-white {
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    border-radius: 10px;
 }
 
-h5 {
-    color: #ffffff; 
+.service-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px !important; /* Padding uniforme para todas las cards */
+    margin-bottom: 25px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 220px;
+    display: flex;
+    flex-direction: column;
 }
 
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Mostrar siempre los primeros 3 servicios en desktop */
+.d-none.d-lg-block .row .col-md-4:nth-child(1) .service-card,
+.d-none.d-lg-block .row .col-md-4:nth-child(2) .service-card,
+.d-none.d-lg-block .row .col-md-4:nth-child(3) .service-card {
+    padding: 25px !important; /* Mismo padding que los demás */
+    display: block !important;
+    opacity: 1 !important;
+    height: 220px !important;
+    visibility: visible !important;
+}
+
+/* Ocultar servicios adicionales inicialmente */
+.d-none.d-lg-block .service-card.hidden {
+    display: none !important;
+    opacity: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: hidden !important;
+}
+
+/* ===== SERVICIOS - VERSIÓN MÓVIL ===== */
+@media (max-width: 991.98px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    #sobreMi .info-section {
+        height: auto;
+        max-height: 60vh;
+        width: 90% !important;
+    }
+    
+    .service-card {
+        margin: 10px auto;
+        width: 90% !important;
+    }
+    
+    .service-card.hidden {
+        display: block !important;
+        opacity: 1 !important;
+        height: auto !important;
+        padding: 20px !important;
+        margin: 10px auto !important;
+    }
+    
+    #toggleServices {
+        display: none !important;
+    }
+    
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 30px;
+        height: 30px;
+        background: rgba(0,0,0,0.5);
+        border-radius: 50%;
+    }
+}
+
+/* ===== TESTIMONIOS ===== */
+#testimonios {
+    padding: 40px 0 60px;
+    background-color: transparent; 
+}
+
+.testimony-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    height: 100%;
+}
+
+.testimony-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimony-content {
+    padding: 20px;
+}
+
+/* ===== CONTACTO ===== */
+#contacto {
+    background-color: #05003e;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    padding: 60px 30px;
+}
+
+#contacto .carousel {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+#contacto .carousel-inner {
+    border-radius: 10px;
+}
+
+#contacto .carousel-item img {
+    border-radius: 10px;
+    height: 350px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.contact-text {
+    margin-top: 30px;
+    text-align: right;
+    color: white;
+}
+
+/* ===== BOTONES ===== */
+.btn {
+    width: 200px;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+    color: #FFFFFF;
+}
+
+.btn-correo {
+    background-color: #05003e;
+    color: #FFFFFF;
+}
+
+.btn-forms {
+    background-color: #a30000;
+    color: #FFFFFF;
+}
+
+.btn-whatsapp:hover, .btn-correo:hover {
+    opacity: 0.8;
+}
+
+/* ===== ICONOS SOCIALES ===== */
+.social-icons a {
+    background-color: white;
+    border-radius: 50%;
+    color: #333;
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    text-align: center;
+    width: 40px;
+}
+
+.social-icons a:hover {
+    background-color: #333;
+    color: white;
+}
+
+/* ===== MODAL ===== */
 .modal {
     position: fixed;
     z-index: 1;
@@ -323,6 +355,7 @@ h5 {
     color: white;
 }
 
+/* ===== ELEMENTOS VARIOS ===== */
 .service-description {
     margin: 10px 0;
 }
@@ -344,25 +377,22 @@ h5 {
     border-radius: 4px;
 }
 
-.services-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.service-card {
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-
-.service-card.hidden {
+.fade-in {
     opacity: 0;
-    height: 0;
-    padding: 0;
-    margin: 0;
-    overflow: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h5 {
+    color: #ffffff; 
+}
+
+/* ===== BOTÓN VER MÁS SERVICIOS ===== */
 #toggleServices {
     background-color: #000537;
     color: white;
@@ -377,23 +407,4 @@ h5 {
 #toggleServices.active i {
     transform: rotate(180deg);
     transition: transform 0.3s ease;
-}
-
-/* Controles del carrusel de contacto mejorados */
-#contacto .carousel-control-prev,
-#contacto .carousel-control-next {
-    width: 40px;
-    height: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.3);
-    border-radius: 50%;
-}
-
-#contacto .carousel-control-prev {
-    left: 15px;
-}
-
-#contacto .carousel-control-next {
-    right: 15px;
 }
