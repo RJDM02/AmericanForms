@@ -58,13 +58,12 @@ h2 {
 }
 
 /* ===== CARRUSEL PRINCIPAL ===== */
-#carouselInicio .carousel-item img {
-    height: 700px;
-    object-fit: cover;
+#carouselInicio {
+    position: relative;
 }
 
-.carousel-item img {
-    height: 440px;
+#carouselInicio .carousel-item img {
+    height: 700px;
     object-fit: cover;
 }
 
@@ -76,6 +75,34 @@ h2 {
 .carousel-control-prev,
 .carousel-control-next {
     width: 5%;
+}
+
+/* Indicadores para todos los dispositivos */
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: white;
 }
 
 /* ===== SOBRE NOSOTROS ===== */
@@ -137,7 +164,7 @@ h2 {
 .service-card {
     background-color: white;
     border-radius: 10px;
-    padding: 25px !important; /* Padding uniforme para todas las cards */
+    padding: 25px !important;
     margin-bottom: 25px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     transition: transform 0.3s ease;
@@ -155,7 +182,7 @@ h2 {
 .d-none.d-lg-block .row .col-md-4:nth-child(1) .service-card,
 .d-none.d-lg-block .row .col-md-4:nth-child(2) .service-card,
 .d-none.d-lg-block .row .col-md-4:nth-child(3) .service-card {
-    padding: 25px !important; /* Mismo padding que los demás */
+    padding: 25px !important;
     display: block !important;
     opacity: 1 !important;
     height: 220px !important;
@@ -172,52 +199,14 @@ h2 {
     overflow: hidden !important;
 }
 
-/* ===== SERVICIOS - VERSIÓN MÓVIL ===== */
-@media (max-width: 991.98px) {
-    body {
-        font-size: 14px;
-    }
-    
-    h2 {
-        font-size: 28px;
-    }
-    
-    #sobreMi .info-section {
-        height: auto;
-        max-height: 60vh;
-        width: 90% !important;
-    }
-    
-    .service-card {
-        margin: 10px auto;
-        width: 90% !important;
-    }
-    
-    .service-card.hidden {
-        display: block !important;
-        opacity: 1 !important;
-        height: auto !important;
-        padding: 20px !important;
-        margin: 10px auto !important;
-    }
-    
-    #toggleServices {
-        display: none !important;
-    }
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 30px;
-        height: 30px;
-        background: rgba(0,0,0,0.5);
-        border-radius: 50%;
-    }
-}
-
 /* ===== TESTIMONIOS ===== */
 #testimonios {
     padding: 40px 0 60px;
     background-color: transparent; 
+}
+
+#carouselTestimonios {
+    position: relative;
 }
 
 .testimony-card {
@@ -248,10 +237,15 @@ h2 {
     padding: 60px 30px;
 }
 
+#carouselAtenciones {
+    position: relative;
+}
+
 #contacto .carousel {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;
 }
 
 #contacto .carousel-inner {
@@ -263,6 +257,18 @@ h2 {
     height: 350px;
     object-fit: cover;
     width: 100%;
+}
+
+#contacto .carousel-indicators {
+    bottom: 15px;
+}
+
+#contacto .carousel-indicators li {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#contacto .carousel-indicators .active {
+    background-color: #000;
 }
 
 .contact-text {
@@ -404,7 +410,63 @@ h5 {
     cursor: pointer;
 }
 
-#toggleServices.active #serviceButtonIcon {
-    transform: rotate(180deg);    
+#toggleServices.active i {
+    transform: rotate(180deg);
     transition: transform 0.3s ease;
+}
+
+/* ===== MEDIA QUERIES PARA MÓVIL ===== */
+@media (max-width: 991.98px) {
+    body {
+        font-size: 14px;
+    }
+    
+    h2 {
+        font-size: 28px;
+    }
+    
+    #sobreMi .info-section {
+        height: auto;
+        max-height: 60vh;
+        width: 90% !important;
+    }
+    
+    .service-card {
+        margin: 10px auto;
+        width: 90% !important;
+    }
+    
+    .service-card.hidden {
+        display: block !important;
+        opacity: 1 !important;
+        height: auto !important;
+        padding: 20px !important;
+        margin: 10px auto !important;
+    }
+    
+    #toggleServices {
+        display: none !important;
+    }
+    
+    /* Ocultar flechas en móvil */
+    .carousel-control-prev,
+    .carousel-control-next {
+        display: none !important;
+    }
+    
+    /* Ajustar altura del carrusel principal */
+    #carouselInicio .carousel-item img {
+        height: 400px;
+    }
+    
+    /* Ajustar indicadores para móvil */
+    .carousel-indicators li {
+        width: 10px;
+        height: 10px;
+    }
+    
+    /* Ajustar carrusel de contacto */
+    #contacto .carousel-item img {
+        height: 300px;
+    }
 }
