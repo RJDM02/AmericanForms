@@ -21,6 +21,36 @@ h2 {
     -webkit-text-fill-color: transparent;
 }
 
+/* Super Oferta*/
+.ad-sticker {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    max-width: 20%;
+}
+
+@media (max-width: 991.98px) {
+    .ad-sticker {
+        width: 100px !important; /* Reducción para móvil */
+    }
+}
+
+/* Ajustes para pantallas muy pequeñas */
+@media (max-width: 576px) {
+    .ad-sticker {
+        width: 80px !important;
+    }
+}
+
+
+/* Efecto hover en desktop */
+@media (min-width: 992px) {
+    .ad-sticker:hover {
+        transform: scale(1.05);
+    }
+}
+
+
 /* ===== NAVBAR ===== */
 .navbar {
     background-color: #000537;
